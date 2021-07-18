@@ -1,0 +1,13 @@
+<!-- <p *ngFor="let n of count">{{n}}hi</p> -->
+<button (click)="start()">start</button>
+<button (click)="stop()">stop</button>
+<table>
+  <tr>
+    <th>Odd</th>
+    <th>Even</th>
+  </tr>
+  <tr *ngFor="let n of nums">
+    <td>{{n%2===0?n:''}}</td>
+    <td>{{n%2===1?n:''}}</td>
+  </tr>
+</table>
